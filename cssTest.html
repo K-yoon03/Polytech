@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="">
+    <style>
+        *{
+            background-color: lightcyan;
+        }
+        #Header-Name{
+            border: 1px solid black;
+            background-color: lightgray;
+            text-align: center;
+        }
+        #Header-Name:hover{
+            background-color: darkgray;
+            color:white;
+        }
+        .nav-li{
+            float: left;
+            margin: 10px;
+            text-align: center;
+            width: 15%;
+            list-style: none;
+            border: 1px solid black;
+            background-color: lightgray;
+        }
+        .nav-li:hover{
+            background-color: darkgray;
+            color:white;
+        }
+        .nav-a{
+            color:black;
+            text-decoration: none;
+        }
+        .home-nav-li{
+            font-weight: bold;
+        }
+        img{
+            margin-left : 100px;
+            border: 1px solid black;
+        }
+        input[type="submit"]{
+            background-color: rgb(204, 255, 255);
+            border-radius: 5px;
+            padding: 5px 15px 5px 15px;
+            margin-top : 15px;
+            margin-left: 200px;
+        }
+        input[type="submit"]:hover{
+            background-color: rgb(116, 255, 255);
+        }
+        input[type="text"]:focus, input[type="password"]:focus{
+            background-color: aqua;
+        }
+        .abc{
+            color : red;
+        }
+        p[class|="abc"]{
+            color : blue;
+        }
+        p[class^="abc"]{
+            color : green;
+        }
+        p[class$="abc"]{
+            color : green;
+        }
+        a[href^="mailto"]{
+            color:blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="Header-Name">저희 사이트에 오신것을 환영합니다.</div>
+        <div id="nav-div">
+            <ul>
+                <a class="nav-a home-nav-li" href="#">
+                    <li class="nav-li">Home</li>
+                </a>
+                <a class="nav-a" href="#">
+                    <li class="nav-li">Manu</li>
+                </a>
+                <a class="nav-a" href="#">
+                    <li class="nav-li">Search</li>
+                </a>
+                <a class="nav-a" href="#">
+                    <li class="nav-li">Etc</li>
+                </a>
+            </ul>
+        </div>
+    </header>
+    <article>
+        <img src="./images/183021e7b974a5761.jpg" alt="숭이" width="500px" height = "300px">
+    </article>
+    <form action="">
+        <label for="ID-form">아이디</label>
+        <input type="text" id="ID-form" placeholder="아이디를 입력해주세요"><br>
+        <label for="PW-form">패스워드</label>
+        <input type="password" id="PW-form" placeholder="비밀번호를 입력해주세요.">
+        <br>
+        <input type="submit">
+    </form>
+    <p class="abc">1번째 문단입니다.</p>
+    <p class="def">2번째 문단입니다.</p>
+    <p class="abc def">3번째 문단입니다.</p>
+    <a href="mailto:example@example.com">이메일 보내기</a>
+    <a href="https://example.com">웹사이트 방문하기</a>
+    <h1>나는 무너 꿈을 꾸는 무너어어<br>
+    꿈속에서는 무엇이든 될 수 잇서~<br>
+    (●'◡'●)<br>
+    /|| |  | ||/</h1>
+    <a href="./font-family.html">폰트패밀리</a>
+</body>
+</html>
