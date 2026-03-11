@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #header-div{
+            width : 842px;
+            background-color: #ebebeb;
+            height : 300px;
+        }
+        #header-div>img{
+            margin-left : 30px;
+            margin-top:50px;
+            width:150px;
+        }
+        #header-comments{
+            text-align: left;
+            float:inline-end;
+            margin-right:200px;
+        }
+        #header-comments>h1{
+            margin-top: 75px;
+        }
+        #header-comments>p{
+            margin-top : 75px;
+        }
+        #profile-category-table{ display:inline-table; }
+        #education-category-table{ display:inline-table; }
+        #license-category-table{ display:inline-table; }
+        #portfolio-category-table{ display:inline-table; }
+        #tmi-category-table { display : inline-table; }
+        
+        #profile-table
+        {
+            display:inline-table;
+            margin-left:150px;
+        }
+        #license-table{
+            display: inline-table;
+            margin-left: 140px;
+        }
+        #education-table,
+        #portfolio-table{
+            display:inline-table;
+            margin-left:120px;
+        }
+        #tmi-table{
+            display:inline-table;
+            margin-left:50px;
+        }
+
+        
+        li{
+            margin-bottom: 50px;
+        }
+        table:not([id*="category"]){
+            border-collapse: collapse;
+        }
+        table:not([id*="category"]) td{
+            border-top: solid gray 1px;
+            padding:8px 10px;
+        }
+        table{
+            table-layout: auto;
+        }
+        .lower_String{
+            font-size: smaller;
+            color:grey;
+        }
+        table tr td:first-of-type{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="header-div">
+            <img src="images/unnamed.jpg" alt="my-image">
+            <span id="header-comments">
+                <h1>"노는게 아직 좋은 신입 개발자"</h1>
+                <p>뽀로로와 동갑이라 그런지 노는게 제일 좋더라구요..</p>
+            </span>
+        </div>
+    </header>
+    <article id="article">
+        <ul style="list-style: none;">
+            <li>
+                <table id="profile-category-table">
+                    <tr>
+                        <td>프로필</td>
+                    </tr>
+                    <tr>
+                        <td class="lower_String">Profile</td>
+                    </tr>
+                </table>
+                <span>
+                    <table id="profile-table">
+                            <colgroup>
+                                <col style="width:180px">
+                                <col style="width:235px">
+                                <col style="width:80px">
+                                <col style="width:100px">
+                            </colgroup>
+                        <tr>
+                            <td style="border-top: solid 3px black;">이름</td>
+                            <td style="border-top: solid 3px black;" colspan="3">고윤</td>
+                        </tr>
+                        <tr>
+                            <td>생년월일</td>
+                            <td colspan="2">2003.10.13</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>메일</td>
+                            <td colspan="2">yoonnyang1013@gmail.com</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>취미</td>
+                            <td colspan="2">피아노, 게임, 독서, 요리</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td style="border-bottom: 1px solid gray;">MBTI</td>
+                            <td style="border-bottom: 1px solid gray;" colspan="3">ENFJ</td>
+                        </tr>
+                    </table>
+                </span>
+
+            </li>
+            <li>
+                <table id="education-category-table">
+                    <tr>
+                        <td>학력사항</td>
+                    </tr>
+                    <tr>
+                        <td class="lower_String">Education</td>
+                    </tr>
+                </table>
+                <table id="education-table">
+                        <colgroup>
+                            <col style="width:180px">
+                            <col style="width:310px">
+                            <col style="width:110px">
+                        </colgroup>
+                    <tr>
+                        <td style="border-top: solid 3px black;">대학교 </td>
+                        <td style="border-top: solid 3px black;">동양미래대학교 컴퓨터소프트웨어 공학(전문학사)</td>
+                        <td style="border-top: solid 3px black;">3.74/4.5</td>
+                    </tr>
+                    <tr>
+                        <td>대학교 </td>
+                        <td>동양미래대학교 컴퓨터소프트웨어 공학(전공심화/학사)</td>
+                        <td>2027년 2월 졸업예정</td>
+                    </tr>
+                    <tr>
+                        <td>대학교 </td>
+                        <td>한국폴리텍대학교 광명융합기술교육원</td>
+                        <td>2026년 12월 졸업예정</td>
+                    </tr>
+                </table>
+            </li>
+            <li> 
+                <table id="license-category-table">
+                    <tr>
+                        <td>자격증</td>
+                    </tr>
+                    <tr>
+                        <td class="lower_String">License</td>
+                    </tr>
+                </table>
+                <table id="license-table">
+                        <colgroup>
+                            <col style="width:180px">
+                            <col style="width:400px">
+                        </colgroup>
+                    <tr>
+                        <td rowspan="5" style="border-top: solid 3px black;">자격증</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" style="border-top: solid 3px black;">
+                            SQLD(Structured Query Language Developer)
+                        </td>
+                    </tr>
+                    <tr>
+                        <tr>
+                            <td colspan="3">PCCE(Programmers Certified Coding Essential) JAVA</td>
+                        </tr>
+                    </tr>
+                    <tr>
+                        <td colspan="2">-</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">-</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">-</td>
+                    </tr>
+                </table>
+            </li>
+            <li>
+                <table id="portfolio-category-table">
+                    <tr>
+                        <td>포트폴리오</td>
+                    </tr>
+                    <tr>
+                        <td class="lower_String">Portfolio</td>
+                    </tr>
+                </table>
+                <table id="portfolio-table">
+                        <colgroup>
+                            <col style="width:180px">
+                            <col style="width:320px">
+                            <col style="width:110px">
+                        </colgroup>
+                    <tr>
+                        <td style="border-top: solid 3px black;">Capstone Design</td>
+                        <td style="border-top: solid 3px black;">2D Top View Pixel Sanbox RPG게임<br>Hero's Harvest</td>
+                        <td style="border-top: solid 3px black;">Unity / C#</td>
+                    </tr>
+                    <tr>
+                        <td>Embedded</td>
+                        <td>Yolo v5 모듈을 이용한 스마트 방범 CCTV</td>
+                        <td>Python</td>
+                    </tr>
+                    <tr>
+                        <td>Web</td>
+                        <td>React+Java Servlet 기반 재무계획 사이트
+                            <br>SpringBoot 기반 감정일지 사이트</td>
+                        <td>Java / Java Script</td>
+                    </tr>
+                </table>
+            </li>
+            <div id="header-div" style="height: 150px;">
+                <p style="position: relative; left: 5px; top:40px; font-size: 36px;">5분을 채우기 위한 TMI</p>
+            </div>
+            <li style="margin-top: 40px;">
+                <table id="tmi-category-table">
+                    <tr>
+                        <td>TMI</td>
+                    </tr>
+                    <tr>
+                        <td class="lower_String">Too much Information</td>
+                    </tr>
+                </table>
+                <table id="tmi-table">
+                    <colgroup>
+                            <col style="width:180px">
+                            <col style="width:430px">
+                    </colgroup>
+                    <tr>
+                        <td style="border-top: solid 3px black;">출생지</td>
+                        <td style="border-top: solid 3px black;">충청북도 시골마을</td>
+                    </tr>
+                    <tr>
+                        <td>하는 게임</td>
+                        <td>롤(플레티넘), 발로란트, 배그(아시아 87등), 오버워치(마스터), 기타등등 스팀게임</td>
+                    </tr>
+                    <tr>
+                        <td>의외인 점?</td>
+                        <td>주짓수 블루벨트, 태권도 2단, 배드민턴</td>
+                    </tr>
+                    <tr>
+                        <td>어쩌다보니 잘하게 된</td>
+                        <td>컴퓨터 수리 및 조립</td>
+                    </tr>
+                    <tr>
+                        <td>그 외 좋아하는 것</td>
+                        <td>매운 음식, 간단한 음주, 커피</td>
+                    </tr>
+                </table>
+            </li>
+        </ul>
+    </article>
+</body>
+</html>
